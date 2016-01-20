@@ -263,7 +263,8 @@ function initialize() {
 
 function update() {
 
-    pattern.padding = pattern.offset = (2 * pattern.dot_size) + (pattern.dot_size / 2);
+    pattern.padding = 15;
+    pattern.offset = (2 * pattern.dot_size) + (pattern.dot_size / 2);
     pattern.cols = Math.floor(pattern.width / (pattern.offset));
     pattern.rows = Math.floor(pattern.height / (pattern.offset));
 
