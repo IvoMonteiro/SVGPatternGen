@@ -8,7 +8,6 @@
  */
 var Dot = {
     options: null,
-    dot_size: 15,
     pos_x: 0,
     pos_y: 0,
     colour: {
@@ -49,7 +48,7 @@ var Dot = {
         this.pos_y = y;
 
         this.set_RandomColour(pattern.indexFromSet);
-        this.svg_obj = add.nested().circle(this.dot_size).move(this.pos_x, this.pos_y).fill(this.colour);
+        this.svg_obj = add.nested().circle(pattern.dot_size).move(this.pos_x, this.pos_y).fill(this.colour);
 
         return this;
     }
@@ -231,9 +230,9 @@ var Stage = {
     viewport: null,
     init: function () {
         if (!this.drawing)
-            this.drawing = SVG('drawing').size('100%', '100%');
+            this.drawing = SVG('drawing').size($("#drawing").width(), $("#drawing").height());
         if (!this.viewport)
-            this.viewport = this.drawing.rect('100%', '100%').move(0, 0).fill("#FFF");
+            this.viewport = this.drawing.rect($("#drawing").width(), $("#drawing").height()).move(0, 0).fill("#FFF");
         this.dom = $("#drawing");
 
         return this;
@@ -328,6 +327,7 @@ window.onload = (function () {
     $(".size").on("change", function () {
 
         pattern.dot_size = $(this).val();
+        console.log(pattern.dot_size);
         update();
     });
 
