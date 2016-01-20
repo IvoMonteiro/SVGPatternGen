@@ -263,8 +263,7 @@ function initialize() {
 
 function update() {
 
-    pattern.padding = 15;
-    pattern.offset = (2 * pattern.dot_size) + (pattern.dot_size / 2);
+    pattern.padding = pattern.offset = (2 * pattern.dot_size) + (pattern.dot_size / 2);
     pattern.cols = Math.floor(pattern.width / (pattern.offset));
     pattern.rows = Math.floor(pattern.height / (pattern.offset));
 
@@ -325,50 +324,50 @@ window.onload = (function () {
     /**
      * Update Dot Width and  and itself
      */
-    $(".size").on("change", function () {
-
-        pattern.dot_size = $(this).val();
-        console.log(pattern.dot_size);
-        update();
-    });
+    // $(".size").on("change", function () {
+    //
+    //     pattern.dot_size = $(this).val();
+    //     console.log(pattern.dot_size);
+    //     update();
+    // });
 
     /**
      * Update Pattern Width
      */
-    $("#wdt").on("keyup blur change", function (event) {
-        if (event.keyCode == "13" || event.type == "change" || event.type == "blur") {
-
-            if (!$(this).val()) $(this).val(1400);
-            pattern.width = $(this).val();
-            $("#drawing").width(pattern.width);
-            update();
-
-        }
-        return false;
-    });
+    // $("#wdt").on("keyup blur change", function (event) {
+    //     if (event.keyCode == "13" || event.type == "change" || event.type == "blur") {
+    //
+    //         if (!$(this).val()) $(this).val(1400);
+    //         pattern.width = $(this).val();
+    //         $("#drawing").width(pattern.width);
+    //         update();
+    //
+    //     }
+    //     return false;
+    // });
 
     /**
      * Update Pattern Height
      */
-    $("#hgt").on("keyup blur change", function (event) {
-        if (event.keyCode == "13" || event.type == "change" || event.type == "blur") {
-
-            if (!$(this).val()) $(this).val(250);
-            pattern.height = $(this).val();
-            $("#drawing").height(pattern.height);
-            update();
-
-        }
-    });
+    // $("#hgt").on("keyup blur change", function (event) {
+    //     if (event.keyCode == "13" || event.type == "change" || event.type == "blur") {
+    //
+    //         if (!$(this).val()) $(this).val(250);
+    //         pattern.height = $(this).val();
+    //         $("#drawing").height(pattern.height);
+    //         update();
+    //
+    //     }
+    // });
 
     /**
      * Add Symbol to Pattern and update pattern
      */
-    $(".add_symbol").on("click", function () {
-
-        pattern.has_symbol = $(this).is(':checked');
-        update();
-    });
+    // $(".add_symbol").on("click", function () {
+    //
+    //     pattern.has_symbol = $(this).is(':checked');
+    //     update();
+    // });
 
     /**
      * Download Button: transform into base64 and send as file blob
