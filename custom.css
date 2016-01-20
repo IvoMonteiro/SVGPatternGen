@@ -1,0 +1,129 @@
+a, a:focus, a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.random_set01
+{
+  background: url(./img/01_symbol.svg) no-repeat top left;
+}
+.random_set02
+{
+  background: url(./img/02_symbol.svg) no-repeat top left;
+}
+.random_set03
+{
+  background: url(./img/03_symbol.svg) no-repeat top left;
+}
+.random_set04
+{
+  background: url(./img/04_symbol.svg) no-repeat top left;
+}
+.random_set05
+{
+  background: url(./img/05_symbol.svg) no-repeat top left;
+}
+.random_set06
+{
+  background: url(./img/06_symbol.svg) no-repeat top left;
+}
+.random_set07
+{
+  background: url(./img/07_symbol.svg) no-repeat top left;
+}
+.random_set08
+{
+  background: url(./img/08_symbol.svg) no-repeat top left;
+}
+.random_set01,.random_set02,.random_set03,.random_set04,.random_set05,.random_set06,.random_set07,.random_set08
+{
+	background-size: contain;
+	display:block;
+	float:left;
+	height:30px;
+	width:30px;
+	margin:0px 8px 20px 0px;
+}
+
+#drawing
+{
+	height:250px;
+	margin-left:-25px;
+	margin-bottom:10px;
+}
+.dropdown-menu {
+    -webkit-box-shadow: 0 ; 
+    box-shadow: none;
+}
+.dropdown-header {
+    padding: 5px 0px 10px 0px;
+}
+.dropdown-menu{
+	padding:15px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+input[type=checkbox], input[type=radio]{
+	margin: 4px 10px 0 0;
+}
+input[type=range]
+{
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
+	background-color:#FFF;
+	border-radius:5px;
+	height:8px;
+	vertical-align:middle;
+	width:100%;
+}
+
+input[type=range]::-webkit-slider-runnable-track
+{
+	-webkit-appearance:none;
+	appearance:none;
+	background-color:#FFF;
+	border:solid 1px rgba(0,0,0,0.25);
+	border-radius:5px;
+	height:10px;
+	vertical-align:middle;
+}
+
+input[type=range]::-webkit-slider-thumb
+{
+	-webkit-appearance:none;
+	background-color:#FFF;
+	border:1px solid #999;
+	border-radius:10px;
+	height:20px;
+	margin-top:-6px;
+	vertical-align:middle;
+	width:20px;
+}
+
+input[type=range]::-moz-range-track
+{
+	-moz-appearance:none;
+	background-color:#FFF;
+	border:solid 1px rgba(0,0,0,0.25);
+	border-radius:5px;
+	box-shadow:inset 1px 1px 1px rgba(000,000,000,0.25);
+	height:8px;
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+}
+
+input[type=range]::-moz-range-thumb
+{
+	-moz-appearance:none;
+	background-color:#FFF;
+	border:1px solid #999;
+	border-radius:10px;
+	box-shadow:inset 0;
+	height:20px;
+	width:5px;
+}
